@@ -29,7 +29,7 @@ brew install zsh
 # Install more recent versions of some OSX tools.
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
+brew install homebrew/dupes/openssh --with-keychain-support
 brew install homebrew/dupes/screen
 
 binaries=(
