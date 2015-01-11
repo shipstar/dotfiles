@@ -29,7 +29,7 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
 # Always open everything in Finder's list view. This is important.
-defaults write com.apple.Finder FXPreferredViewStyle clmv
+defaults write com.apple.Finder FXPreferredViewStyle -string "clmv"
 
 # Show the ~/Library folder.
 chflags nohidden ~/Library
