@@ -1,0 +1,14 @@
+# Sample gitconfig
+#
+
+[hub]
+        protocol = https
+[user]
+        name = AUTHORNAME
+        email = AUTHOREMAIL
+[credential]
+        helper = GIT_CREDENTIAL_HELPER
+[color]
+        ui = auto
+[push]
+        default = simple
