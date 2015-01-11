@@ -7,6 +7,7 @@ then
 fi
 
 # The rest of my fun git aliases
+alias ga='git add'
 alias gs='git status'
 alias gl='git pull --rebase'
 alias gc='git commit'
