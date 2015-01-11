@@ -1,6 +1,11 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
+# use a theme
+# pattern and theme stolen from oh-my-zsh
+export ZSH_THEME=robbyrussell
+source $ZSH/zsh/theme.zsh
+
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Programming
 
@@ -21,8 +26,8 @@ do
   source $file
 done
 
-# load everything but the path and completion files
-for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
+# load everything but the path, completion, and theme files
+for file in ${${config_files:#*/path.zsh}:#*/completion.zsh:#*/themes.zsh}
 do
   source $file
 done
