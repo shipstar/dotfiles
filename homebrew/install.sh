@@ -32,22 +32,13 @@ brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
-cli=(
-  curl
-  tree
-  watch
-)
-brew install ${cli[@]}
-
-# Install dev tools
 binaries=(
   git
   hub
-  leiningen
-  node
   postgresql
-  rbenv
-  ruby-build
+  redis
+  tree
+  watch
 )
 brew install ${binaries[@]}
 
@@ -81,7 +72,6 @@ casks=(
   virtualbox
   # xcode
 )
-
 brew cask install ${casks[@]}
 
 echo "Can't install:
