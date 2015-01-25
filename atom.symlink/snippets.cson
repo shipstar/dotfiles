@@ -1,0 +1,26 @@
+'.source.coffee':
+  'React component':
+    'prefix': 'rcom'
+    'body': '''
+      React = require 'react'
+
+      module.exports = React.createClass
+
+        render: ->
+          $1
+
+    '''
+
+  'ES6 React Component':
+    'prefix': '6com'
+    'body': '''
+      import React from 'react'
+
+      let $1 = React.createClass({
+        render() {
+          $2
+        }
+      })
+
+      export default $1
+    '''
