@@ -53,24 +53,27 @@ brew tap caskroom/versions
 
 casks=(
   alfred
-  # atom
+  atom
   caffeine
   dropbox
   firefox
   flowdock
+  flux
   google-chrome
   google-drive
   iterm2
+  java
   mailbox
   mou
   psequel
   recordit
+  sequel-pro
+  skype
   slack
   sublime-text3
   the-unarchiver
   things
   virtualbox
-  # xcode
 )
 brew cask install ${casks[@]}
 
