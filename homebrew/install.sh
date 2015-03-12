@@ -61,6 +61,7 @@ casks=(
   flux
   google-chrome
   google-drive
+  heroku-toolbelt
   iterm2
   java
   mailbox
@@ -79,8 +80,11 @@ brew cask install ${casks[@]}
 
 echo "Can't install:
 
-pixelmator
-reeder
+ColorSnapper
+Pixelmator
+Pixen
+Reeder
+TomatoTimer
 
 with casks. Use the Mac App Store."
 
