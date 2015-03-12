@@ -11,8 +11,9 @@
 
     '''
 
-  'ES6 React Component':
-    'prefix': '6com'
+'.source.jsx':
+  'React Component':
+    'prefix': 'rcom'
     'body': '''
       import React from 'react'
 
@@ -23,4 +24,31 @@
       })
 
       export default $1
+    '''
+
+'.source.ruby':
+  'Rails model':
+    'prefix': 'rmod'
+    'body': '''
+      class $1 < ActiveRecord::Base
+        $2
+      end
+    '''
+
+  'Rails controller':
+    'prefix': 'rcon'
+    'body': '''
+      class $1Controller < ApplicationController
+        $2
+      end
+    '''
+
+  'Rails API controller':
+    'prefix': 'rapi'
+    'body': '''
+      module API
+        class $1Controller < BaseController
+          $2
+        end
+      end
     '''
