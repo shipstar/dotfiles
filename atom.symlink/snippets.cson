@@ -17,7 +17,7 @@
     'body': '''
       import React from 'react'
 
-      let $1 = React.createClass({
+      const $1 = React.createClass({
         render() {
           $2
         }
