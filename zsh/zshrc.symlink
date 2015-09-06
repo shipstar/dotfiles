@@ -26,8 +26,8 @@ do
   source $file
 done
 
-# load everything but the path, completion, and theme files
-for file in ${${config_files:#*/path.zsh}:#*/completion.zsh:#*/themes.zsh}
+# load everything but the path and completion files
+for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
 do
   source $file
 done
