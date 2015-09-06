@@ -1,10 +1,12 @@
 "*":
   editor:
     fontFamily: "Menlo"
-    fontSize: 14
     showIndentGuide: true
     tabLength: 2
     invisibles: {}
+    preferredLineLength: 120
+    softWrap: true
+    fontSize: 14
   core:
     ignoredNames: [
       ".bundle"
@@ -18,6 +20,11 @@
       "background-tips"
       "exception-reporting"
       "metrics"
+      "symbols-view"
+    ]
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
     ]
   "spell-check":
     grammars: [
@@ -30,12 +37,18 @@
   "release-notes":
     viewedVersion: "0.89.0"
   "go-plus": {}
-  "tree-view":
-    hideVcsIgnoredFiles: true
-  react:
-    jsxTagStartPattern: "(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))"
-    jsxComplexAttributePattern: "(?x)\\{ [^}\"']* $|\\( [^)\"']* $"
-    decreaseIndentForNextLinePattern: "/>\\s*,?\\s*$"
-".groovy.source":
-  editor:
-    tabLength: 4
+  "tree-view": {}
+  react: {}
+  "atom-beautify":
+    _analyticsUserId: "cd7896cc-a009-4464-8536-4fc33b4c0706"
+  "linter-eslint":
+    eslintRulesDir: "client"
+    disableWhenNoEslintrcFileInPath: true
+  linter:
+    lintOnChangeInterval: 2000
+    subtleLinterErrors: [
+      "rubocop"
+    ]
+  "atom-ctags":
+    cmdArgs: "--exclude app/assets/javascripts/bundle* --exclude client/node_modules"
+  "linter-rubocop": {}

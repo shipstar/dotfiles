@@ -4,10 +4,10 @@
     'body': '''
       React = require 'react'
 
-      module.exports = React.createClass
+      class $1 extends React.Component
 
         render: ->
-          $1
+          $2
 
     '''
 
@@ -17,11 +17,11 @@
     'body': '''
       import React from 'react'
 
-      const $1 = React.createClass({
+      class $1 extends React.Component {
         render() {
           $2
         }
-      })
+      }
 
       export default $1
     '''
