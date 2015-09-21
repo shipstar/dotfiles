@@ -35,7 +35,10 @@ setopt HIST_REDUCE_BLANKS
 
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
-setopt complete_aliases
+# Note: The below was uncommented before, but it was preventing
+# tab completion when using git aliases. Seems to be working,
+# so remove if this comment is still here with no complications as of 1/1/16.
+# setopt complete_aliases
 
 zle -N newtab
 
