@@ -6,7 +6,6 @@
     invisibles: {}
     preferredLineLength: 120
     softWrap: true
-    fontSize: 14
   core:
     ignoredNames: [
       ".bundle"
@@ -50,5 +49,8 @@
       "rubocop"
     ]
   "atom-ctags":
-    cmdArgs: "--exclude app/assets/javascripts/bundle* --exclude client/node_modules"
+    cmdArgs: "-R --languages=ruby,javascript --exclude=.git --exclude=log --exclude=app/assets/javascripts --exclude=client/node_modules . $(bundle list --paths)"
+    cmd: "ctags"
+    autoBuildTagsWhenActive: true
   "linter-rubocop": {}
+  "autocomplete-plus": {}
