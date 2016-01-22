@@ -96,10 +96,21 @@ brew tap caskroom/fonts
 
 fonts=(
   font-alfa-slab-one
+  font-droid-sans
+  font-fauna-one
+  font-merriweather
+  font-merriweather-sans
+  font-muli
+  font-oswald
+  font-playfair-display
+  font-playfair-display-sc
   font-podkova
   font-poller-one
   font-raleway
   font-roboto
   font-roboto-slab
   font-yanone-kaffeesatz
+  font-yeseva-one
 )
+
+brew cask install ${fonts[@]}
