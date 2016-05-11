@@ -1,16 +1,3 @@
-'.source.coffee':
-  'React component':
-    'prefix': 'rcom'
-    'body': '''
-      React = require 'react'
-
-      class $1 extends React.Component
-
-        render: ->
-          $2
-
-    '''
-
 '.source.jsx':
   'React Component':
     'prefix': 'rcom'
