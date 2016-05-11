@@ -62,19 +62,21 @@ casks=(
   google-chrome
   google-drive
   heroku-toolbelt
+  imageoptim
   iterm2
   java
-  mailbox
   mou
-  psequel
+  postico
   recordit
   sequel-pro
-  skype
+  skitch
   slack
+  spotify
   sublime-text3
   the-unarchiver
   things
   virtualbox
+  vlc
 )
 brew cask install ${casks[@]}
 
