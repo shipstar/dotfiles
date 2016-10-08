@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# focus
+#
+# `focus` removes distractions such as files on your Desktop, and maybe
+# other things in the future (/etc/hosts, etc).
+
+usage () {
+  echo "Usage: focus [state]";
+  echo "[state] = on (remove distractions) or off (return to normal)";
+}
+
+case $1 in
+  "on" ) showIcons=false ;;
+  "off" ) showIcons=true ;;
+  * ) usage && exit 1 ;;
+esac
+
+defaults write com.apple.finder CreateDesktop $showIcons
+killall Finder
