@@ -1,1 +1,15 @@
-export PATH="./bin:/usr/local/bin:/usr/local/sbin:$ZSH/bin:$HOME/.cabal/bin:$PATH"
+# In ZSH, $path is an array while $PATH is a string.
+# Modifying one apparently modifies the other.
+# See http://superuser.com/questions/598810/zsh-config-to-export-or-not-to-export/598924#598924
+# for more info.
+path=(
+  ./bin
+  /usr/local/bin
+  /usr/local/sbin
+  $ZSH/bin
+  $HOME/.yarn/bin
+  $HOME/.cabal/bin
+  $path
+)
+
+export PATH
