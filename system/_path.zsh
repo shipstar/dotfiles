@@ -9,6 +9,7 @@ path=(
   $ZSH/bin
   $HOME/.yarn/bin
   $HOME/.cabal/bin
+  ./node_modules/.bin
   $path
 )
 
