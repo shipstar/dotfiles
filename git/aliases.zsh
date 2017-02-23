@@ -8,6 +8,7 @@ fi
 
 # The rest of my fun git aliases
 alias ga='git add'
+alias gaa='git add -A'
 alias gs='git status'
 alias glg='git log'
 alias gl='git pull --rebase'
@@ -24,3 +25,4 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias grhh='git reset --hard HEAD'
 alias grpo='git remote prune origin'
+alias grbc="git rebase --continue"
