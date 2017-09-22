@@ -46,7 +46,10 @@ module.exports = {
       '#cc00ff',
       '#00ffff',
       '#ffffff'
-    ]
+    ],
+
+    // See https://github.com/zeit/hyper/issues/312#issuecomment-281407215
+    shell: '/bin/zsh'
   },
 
   // a list of plugins to fetch and install from npm
