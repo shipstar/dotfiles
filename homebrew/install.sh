@@ -46,7 +46,7 @@ brew install ${binaries[@]}
 brew tap homebrew/boneyard
 
 # Install Mac apps
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 
 # Access to betas for Chrome Canary, Sublime Text, etc
 brew tap caskroom/versions
@@ -57,26 +57,20 @@ casks=(
   caffeine
   dropbox
   firefox
-  flowdock
   flux
   google-chrome
-  google-drive
-  heroku-toolbelt
+  google-backup-and-sync
+  # heroku-toolbelt
   imageoptim
   iterm2
   java
-  mou
   postico
   recordit
-  sequel-pro
   skitch
   slack
   spotify
-  sublime-text3
+  sublime-text
   the-unarchiver
-  things
-  virtualbox
-  vlc
 )
 brew cask install ${casks[@]}
 
@@ -86,7 +80,7 @@ ColorSnapper
 Pixelmator
 Pixen
 Reeder
-TomatoTimer
+Things
 
 with casks. Use the Mac App Store."
 
