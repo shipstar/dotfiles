@@ -88,3 +88,15 @@ for app in "Dock" "Finder" "SystemUIServer"; do
 	killall "${app}" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+###############################################################################
+# Full-disk encryption                                                        #
+###############################################################################
+
+if fdesetup status | grep $Q -E "FileVault is (On|Off, but will be enabled after the next restart)."; then
+	echo "• Full-disk encryption is already enabled or will be enabled after the next restart"
+else
+	echo "• Enabling full-disk encryption (FileVault)"
+	sudo fdesetup enable -user "$USER" | tee ~/Desktop/"FileVault_Recovery_Key.txt"
+	echo "⚠️ Full-disk encryption will be enabled after the next restart"
+fi
