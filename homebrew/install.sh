@@ -60,7 +60,6 @@ casks=(
   flux
   google-chrome
   google-backup-and-sync
-  # heroku-toolbelt
   imageoptim
   iterm2
   java
