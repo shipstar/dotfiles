@@ -62,13 +62,11 @@ casks=(
   google-backup-and-sync
   imageoptim
   iterm2
-  java
   postico
   recordit
   skitch
   slack
   spotify
-  sublime-text
   the-unarchiver
 )
 brew cask install ${casks[@]}
