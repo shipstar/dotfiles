@@ -7,8 +7,6 @@ path=(
   /usr/local/bin
   /usr/local/sbin
   $ZSH/bin
-  $HOME/.yarn/bin
-  $HOME/.cabal/bin
   ./node_modules/.bin
   $path
 )
