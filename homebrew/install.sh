@@ -24,10 +24,9 @@ brew install coreutils
 brew install findutils
 
 # Install zsh
-brew install zsh
+brew install zsh zsh-completions
 
 # Install more recent versions of some OSX tools.
-brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh --with-keychain-support
 brew install homebrew/dupes/screen
@@ -35,21 +34,13 @@ brew install homebrew/dupes/screen
 binaries=(
   git
   hub
+  nvim
   postgresql
   redis
   tree
   watch
 )
 brew install ${binaries[@]}
-
-# Install brew services
-brew tap homebrew/boneyard
-
-# Install Mac apps
-brew tap caskroom/cask
-
-# Access to betas for Chrome Canary, Sublime Text, etc
-brew tap caskroom/versions
 
 casks=(
   alfred
@@ -60,6 +51,7 @@ casks=(
   flux
   google-chrome
   google-backup-and-sync
+  hyper
   imageoptim
   iterm2
   postico
@@ -81,15 +73,12 @@ Things
 
 with casks. Use the Mac App Store."
 
-# Ensure that homebrew-cask apps are available to alfred
-brew cask alfred link
-
 # Install some fonts
 brew tap caskroom/fonts
 
 fonts=(
   font-alfa-slab-one
-  font-droid-sans
+  font-droidsansmono-nerd-font
   font-fauna-one
   font-merriweather
   font-merriweather-sans
