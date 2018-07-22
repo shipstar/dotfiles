@@ -1,12 +1,3 @@
-if [[ -n $SSH_CONNECTION ]]; then
-  export PS1='%m:%3~$(git_info_for_prompt)%# '
-else
-  export PS1='%3~$(git_info_for_prompt)%# '
-fi
-
-export LSCOLORS="exfxcxdxbxegedabagacad"
-export CLICOLOR=true
-
 fpath=($ZSH/functions $fpath)
 fpath=(/usr/local/share/zsh-completions $fpath)
 
@@ -33,13 +24,6 @@ setopt APPEND_HISTORY # adds history
 setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
 setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
 setopt HIST_REDUCE_BLANKS
-
-# don't expand aliases _before_ completion has finished
-#   like: git comm-[tab]
-# Note: The below was uncommented before, but it was preventing
-# tab completion when using git aliases. Seems to be working,
-# so remove if this comment is still here with no complications as of 1/1/16.
-# setopt complete_aliases
 
 zle -N newtab
 
