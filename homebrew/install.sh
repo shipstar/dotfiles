@@ -95,6 +95,7 @@ fonts=(
   font-fauna-one
   font-merriweather
   font-merriweather-sans
+  font-meslo-nerd-font
   font-muli
   font-oswald
   font-playfair-display
