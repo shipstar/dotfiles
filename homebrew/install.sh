@@ -51,6 +51,7 @@ binaries=(
   redis
   tree
   watch
+  zplug
 )
 brew install ${binaries[@]}
 
