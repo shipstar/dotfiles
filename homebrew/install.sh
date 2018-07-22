@@ -23,6 +23,18 @@ brew install coreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
 
+# Install helpful build tools for Ruby, Python, etc
+build_tools=(
+  libffi
+  libyaml
+  openssl
+  readline
+  sqlite3
+  xz
+  zlib
+)
+brew install ${build_tools[@]}
+
 # Install zsh
 brew install zsh zsh-completions
 
