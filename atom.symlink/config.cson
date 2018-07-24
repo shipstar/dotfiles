@@ -21,7 +21,7 @@
   editor:
     fontFamily: "Menlo"
     invisibles: {}
-    preferredLineLength: 120
+    preferredLineLength: 80
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
     tabLength: 2
