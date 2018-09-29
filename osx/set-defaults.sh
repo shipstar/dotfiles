@@ -29,6 +29,12 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 # Disable “natural” (Lion-style) scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
+# Enable and configure key repeat
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225ms)
+defaults write -g KeyRepeat -int 2 # normal minimum is 2 (30ms)
+echo "Key Repeat enabled. You may need to restart."
+
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################

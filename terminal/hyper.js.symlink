@@ -65,7 +65,7 @@ module.exports = {
     'hyperterm-dibdabs',
     'hyperterm-material',
     // 'hyperterm-solarized-dark',
-    'hyperterm-title'
+    'hyperterm-title',
   ],
 
   // in development, you can create a directory under

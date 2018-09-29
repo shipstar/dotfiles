@@ -1,12 +1,27 @@
-" vim-plug plugins
+syntax on
+set smartindent
+set ignorecase
+set smartcase
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set number
+
+filetype indent plugin on " Wrap gitcommit file types at the appropriate length
+
+
 call plug#begin('~/.local/share/nvim/plugged')
-
+Plug 'junegunn/fzf.vim'
+Plug 'rafi/awesome-vim-colorschemes'
 Plug 'scrooloose/nerdtree'
-
+Plug 'tpope/vim-surround'
+Plug '/usr/local/opt/fzf'
 call plug#end()
 
+colorscheme afterglow
 
-syntax on
-
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+" disable arrow keys while learning
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
