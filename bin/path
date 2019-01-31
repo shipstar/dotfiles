@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# Print out each item in your path on its own line
+
+echo $PATH | sed -e $'s/:/\\\n/g'
