@@ -30,5 +30,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = input
+	whitespace="cr-at-eol"
+	filemode = false
 [diff "ansible-vault"]
 	textconv = ansible-vault view
