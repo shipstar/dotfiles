@@ -11,4 +11,9 @@ path=(
   $path
 )
 
+# ensure asdf shims take precedence over homebrew
+# for e.g. ruby, python, node
+# FIXME: There must be a better way to do this
+. $HOME/.asdf/asdf.sh
+
 export PATH
