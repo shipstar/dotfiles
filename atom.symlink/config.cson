@@ -1,4 +1,9 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "da56904f-900c-4f64-8a19-7f32a1501510"
+  "autocomplete-plus":
+    autoActivationDelay: 500
   core:
     disabledPackages: [
       "background-tips"
@@ -37,9 +42,15 @@
     disableWhenNoEslintrcFileInPath: true
     eslintRulesDir: "client"
   "linter-rubocop": {}
+  "linter-ui-default": {}
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      isDisabledIfNotInPackageJson: true
+      showInStatusBar: true
   react: {}
   "release-notes":
     viewedVersion: "0.89.0"
@@ -49,6 +60,7 @@
       "source.gfm"
       "text.git-commit"
     ]
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
