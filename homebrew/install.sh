@@ -27,6 +27,7 @@ brew install findutils
 build_tools=(
   libffi
   libyaml
+  openssh
   openssl
   readline
   sqlite3
@@ -38,17 +39,14 @@ brew install ${build_tools[@]}
 # Install zsh
 brew install zsh zsh-completions
 
-# Install more recent versions of some OSX tools.
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh --with-keychain-support
-brew install homebrew/dupes/screen
-
 binaries=(
   git
+  grep
   hub
   nvim
   postgresql
   redis
+  screen
   tree
   watch
   zplug

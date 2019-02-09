@@ -1,28 +1,19 @@
 # shipstar does holman does dotfiles
 
-## dotfiles
+## How I set up a new Mac:
 
-Your dotfiles are how you personalize your system. These are mine.
+1. Install `1Password` via the Mac App Store
+2. Download homebrew
+3. `brew install git`
+4. `git clone git@github.com:shipstar/dotfiles.git ~/.dotfiles`
+  - May require generating a new SSH key and adding to GitHub if you forgot to back it up
+5. `./script/bootstrap`
+6. Restart the computer for things like scroll direction to take effect
 
-I was a little tired of having long alias files and everything strewn about
-(which is extremely common on other dotfiles projects, too). That led to this
-project being much more topic-centric. I realized I could split a lot of things
-up into the main areas I used (Ruby, git, system libraries, and so on), so I
-structured the project accordingly.
+I always have a few unpredictable issues to resolve after this as libraries
+are out of date, URLs have changed, etc, but this is a good starting point.
 
-If you're interested in the philosophy behind why projects like these are
-awesome, you might want to [read my post on the
-subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
-
-## install
-
-Run this:
-
-```sh
-git clone https://github.com/holman/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-script/bootstrap
-```
+## script/bootstrap
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
 Everything is configured and tweaked within `~/.dotfiles`.
@@ -68,22 +59,7 @@ There's a few special files in the hierarchy.
 
   To further nest symlinks into subdirectories under `$HOME`, use `+` signs to signify additional directory delimiters. So for example, the file `topic/config+topic.symlink` would get symlinked to `$HOME/.config/topic` when you run `script/bootstrap`.
 
-## bugs
-
-I want this to work for everyone; that means when you clone it down it should
-work for you even though you may not have `rbenv` installed, for example. That
-said, I do use this as *my* dotfiles, so there's a good chance I may break
-something if I forget to make a check for a dependency.
-
-If you're brand-new to the project and run into any blockers, please
-[open an issue](https://github.com/holman/dotfiles/issues) on this repository
-and I'd love to get it fixed for you!
-
 ## thanks
 
-I forked [Ryan Bates](http://github.com/ryanb)' excellent
-[dotfiles](http://github.com/ryanb/dotfiles) for a couple years before the
-weight of my changes and tweaks inspired me to finally roll my own. But Ryan's
-dotfiles were an easy way to get into bash customization, and then to jump ship
-to zsh a bit later. A decent amount of the code in these dotfiles stem or are
-inspired from Ryan's original project.
+Thanks to Zach Holman for his dotfiles, and Ryan Bates for inspiring Holman!
+(Maybe this repo should be "shipstar does holman does bates does dotfiles"?)
