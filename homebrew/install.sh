@@ -56,6 +56,7 @@ brew install ${binaries[@]}
 casks=(
   alfred
   atom
+  authy
   caffeine
   dropbox
   firefox
@@ -94,7 +95,6 @@ fonts=(
   font-merriweather
   font-merriweather-sans
   font-meslo-nerd-font
-  font-muli
   font-oswald
   font-playfair-display
   font-playfair-display-sc
