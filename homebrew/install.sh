@@ -72,6 +72,7 @@ casks=(
   slack
   spotify
   the-unarchiver
+  tomighty
 )
 brew cask install ${casks[@]}
 
