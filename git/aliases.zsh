@@ -21,6 +21,8 @@ alias glg='git log'
 alias glgg='git log --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue) <%an>%Creset"'
 alias glgs='git log --stat'
 alias gp='git push'
+alias gpf='git push --force-with-lease'
+alias gppm='git push prod master'
 alias gpu='git push -u'
 alias gpub='git push -u ${1-origin} `git symbolic-ref --short HEAD`'
 alias grbc="git rebase --continue"
