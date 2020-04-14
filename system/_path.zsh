@@ -10,11 +10,6 @@ path=(
   $path
 )
 
-# ensure asdf shims take precedence over homebrew
-# for e.g. ruby, python, node
-# FIXME: There must be a better way to do this
-. $HOME/.asdf/asdf.sh
-
 # now make sure ./bin is at the front so things like binstubs
 # take precedence over system-wide libraries (e.g. bin/rake vs rake)
 path=(
