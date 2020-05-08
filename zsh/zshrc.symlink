@@ -27,9 +27,14 @@ do
   source $file
 done
 
-# initialize autocomplete here, otherwise functions won't be loaded
-# autoload -U compinit
-# compinit
+# TODO: Move to another file?
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  # initialize autocomplete here, otherwise functions won't be loaded
+  autoload -Uz compinit
+  compinit
+fi
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
