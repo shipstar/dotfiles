@@ -4,10 +4,21 @@
     'body': '''
       import React from 'react'
 
-      class $1 extends React.Component {
-        render() {
-          $2
-        }
+      const $1 = () => {
+        $2
+      }
+
+      export default $1
+    '''
+
+'.source.tsx':
+  'React Component':
+    'prefix': 'rcom'
+    'body': '''
+      import React from 'react'
+
+      const $1 = () => {
+        $2
       }
 
       export default $1
