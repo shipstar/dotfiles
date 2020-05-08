@@ -51,7 +51,7 @@ module.exports = {
     // See https://github.com/zeit/hyper/issues/312#issuecomment-281407215
     shell: '/bin/zsh',
 
-    updateChannel: 'canary'
+    updateChannel: 'stable'
   },
 
   // a list of plugins to fetch and install from npm
