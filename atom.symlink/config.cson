@@ -26,7 +26,6 @@
     ]
   editor:
     fontFamily: "Menlo"
-    fontSize: 15
     invisibles: {}
     preferredLineLength: 80
     showIndentGuide: true
@@ -41,15 +40,18 @@
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
     eslintRulesDir: "client"
-  "linter-rubocop": {}
-  "linter-ui-default": {}
+  "linter-rubocop":
+    command: "./bin/standardrb"
+    fixOnSave: true
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     breakOnSingleNewline: true
     useGitHubStyle: true
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
-      isDisabledIfNotInPackageJson: true
+      isDisabledIfNotInPackageJson: false
       showInStatusBar: true
   react: {}
   "release-notes":
@@ -60,7 +62,6 @@
       "source.gfm"
       "text.git-commit"
     ]
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
