@@ -38,6 +38,7 @@ brew "unzip"
 brew "watch"
 brew "xz"
 brew "zlib"
+brew "zplug"
 brew "zsh-completions"
 brew "zsh"
 
