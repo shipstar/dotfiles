@@ -143,20 +143,19 @@ install_dotfiles () {
   done
 }
 
+install_brews () {
+  if ! [ -f Brewfile ]
+  then
+    info 'installing from Brewfile'
+    brew install
+  else
+    info 'no Brewfile found - skipping'
+  fi
+}
+
 setup_gitconfig
 install_dotfiles
-
-# If we're on a Mac, let's install and setup homebrew.
-if [ "$(uname -s)" == "Darwin" ]
-then
-  info "installing dependencies"
-  if source bin/dot > /tmp/dotfiles-dot 2>&1
-  then
-    success "dependencies installed"
-  else
-    fail "error installing dependencies"
-  fi
-fi
+install_brews
 
 echo ''
 echo '  All installed!'
