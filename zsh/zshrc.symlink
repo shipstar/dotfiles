@@ -51,4 +51,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+eval "$(starship init zsh)"
+
 . $(brew --prefix asdf)/asdf.sh
