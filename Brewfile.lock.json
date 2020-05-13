@@ -11,13 +11,16 @@
         "revision": "6cc55a61616f6c4c195bdc13847060b699a0e407"
       },
       "homebrew/cask": {
-        "revision": "c4087b5124c9bfb28eebfdc9f296a1da39b232fb"
+        "revision": "5a437a88bf8889d0a0742c9856dd5e2b58c47b6b"
       },
       "homebrew/core": {
-        "revision": "b86bc61e1073637ebe0a6e0796dc7c5ac2b94417"
+        "revision": "a59d5e0dd96391e3d3c0fe352f20dd09a96f15bd"
       },
       "homebrew/services": {
         "revision": "c8fee02f479d20cf286c20babe696e56d8680205"
+      },
+      "homebrew/cask-fonts": {
+        "revision": "2997a377d214b56d9f5ee864bea6b5c7f2581ca6"
       }
     },
     "brew": {
@@ -396,7 +399,7 @@
         }
       },
       "openssl@1.1": {
-        "version": "1.1.1f",
+        "version": "1.1.1g",
         "bottle": {
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
@@ -743,11 +746,37 @@
             }
           }
         }
-      }
+      },
+      "starship": {
+        "version": "0.41.0",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/starship-0.41.0.catalina.bottle.tar.gz",
+              "sha256": "a94177ea27e842888066bd0cb9e38d0053fc6611449751627f9f8356ff92edfe"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/starship-0.41.0.mojave.bottle.tar.gz",
+              "sha256": "38c7147237a43f5d8b331b354a8cceea27b1bfb4e1e80da2f83fb720c3000327"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/starship-0.41.0.high_sierra.bottle.tar.gz",
+              "sha256": "c0c99306e85a9ae9ca13a94a33e61fc1241d7d458df8213e9489ed14e25796c8"
+            }
+          }
+        }
+      },
+      "zplug": {
+        "version": "2.4.2",
+        "bottle": false
+      },
+      "svn": null
     },
     "cask": {
       "alfred": {
-        "version": "3.8_959",
+        "version": "4.0.9_1144",
         "options": {
           "full_name": "alfred"
         }
@@ -759,19 +788,19 @@
         }
       },
       "atom": {
-        "version": "1.34.0",
+        "version": "1.46.0",
         "options": {
           "full_name": "atom"
         }
       },
       "authy": {
-        "version": "1.7.0",
+        "version": "1.8.1",
         "options": {
           "full_name": "authy"
         }
       },
       "brave-browser": {
-        "version": "81.1.7.98,107.98",
+        "version": "81.1.8.95,108.95",
         "options": {
           "full_name": "brave-browser"
         }
@@ -789,7 +818,7 @@
         }
       },
       "docker": {
-        "version": "2.2.0.5,43884",
+        "version": "2.3.0.2,45183",
         "options": {
           "full_name": "docker"
         }
@@ -801,13 +830,13 @@
         }
       },
       "firefox": {
-        "version": "65.0",
+        "version": "76.0.1",
         "options": {
           "full_name": "firefox"
         }
       },
       "flux": {
-        "version": "39.987",
+        "version": "40.1",
         "options": {
           "full_name": "flux"
         }
@@ -921,13 +950,13 @@
         }
       },
       "google-chrome": {
-        "version": "72.0.3626.96",
+        "version": "81.0.4044.138",
         "options": {
           "full_name": "google-chrome"
         }
       },
       "hyper": {
-        "version": "2.1.2",
+        "version": "3.0.2",
         "options": {
           "full_name": "hyper"
         }
@@ -939,7 +968,7 @@
         }
       },
       "iterm2": {
-        "version": "3.2.7",
+        "version": "3.3.9",
         "options": {
           "full_name": "iterm2"
         }
@@ -981,7 +1010,7 @@
         }
       },
       "slack": {
-        "version": "3.3.7",
+        "version": "4.5.0",
         "options": {
           "full_name": "slack"
         }
@@ -993,7 +1022,7 @@
         }
       },
       "the-unarchiver": {
-        "version": "4.0.0,120:1528909123",
+        "version": "4.2.1,128:1586456379",
         "options": {
           "full_name": "the-unarchiver"
         }
@@ -1015,6 +1044,18 @@
         "options": {
           "full_name": "use-engine"
         }
+      },
+      "font-menlo-for-powerline": {
+        "version": "latest",
+        "options": {
+          "full_name": "font-menlo-for-powerline"
+        }
+      },
+      "font-meslolg-nerd-font": {
+        "version": "2.1.0",
+        "options": {
+          "full_name": "font-meslolg-nerd-font"
+        }
       }
     },
     "mas": {
@@ -1028,7 +1069,7 @@
       },
       "Xcode": {
         "id": "497799835",
-        "version": "11.3.1"
+        "version": "11.4.1"
       }
     }
   },
@@ -1041,6 +1082,14 @@
         "CLT": "10.3.0.0.1.1562985497",
         "Xcode": "11.3.1",
         "macOS": "10.14.6"
+      },
+      "catalina": {
+        "HOMEBREW_VERSION": "2.2.16",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "a59d5e0dd96391e3d3c0fe352f20dd09a96f15bd",
+        "CLT": "11.4.1.0.1.1586360307",
+        "Xcode": "11.4.1",
+        "macOS": "10.15.4"
       }
     }
   }
