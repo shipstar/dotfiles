@@ -9,6 +9,7 @@ path=(
   /usr/local/heroku/bin
   $ZSH/bin
   ./node_modules/.bin
+  ~/.yarn/bin
   $path
 )
 
