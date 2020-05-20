@@ -41,7 +41,6 @@
     disableWhenNoEslintrcFileInPath: true
     eslintRulesDir: "client"
   "linter-rubocop":
-    command: "./bin/standardrb"
     fixOnSave: true
   "linter-ui-default":
     showPanel: true
