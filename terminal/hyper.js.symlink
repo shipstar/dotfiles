@@ -63,9 +63,8 @@ module.exports = {
   plugins: [
     'hypercwd',
     'hyperterm-dibdabs',
-    'hyperterm-material',
-    // 'hyperterm-solarized-dark',
     'hyperterm-title',
+    'hyper-dracula',
   ],
 
   // in development, you can create a directory under
