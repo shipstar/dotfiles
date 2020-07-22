@@ -1,7 +1,56 @@
-:syntax enable
+" Map the leader key to space
+nnoremap <SPACE> <Nop>
+let mapleader = ' '
 
-:set number relativenumber
+" Allow backspacing over everything in insert mode
+set backspace=indent,eol,start
 
-let g:ale_linters = {'ruby': ['standardrb']}
-let g:ale_fixers = {'ruby': ['standardrb']}
+syntax on
+
+" dracula theme
+packadd! dracula
+let g:dracula_italic = 0 " TODO: Figure out why italics aren't working
+colorscheme dracula
+
+set smartindent
+set shiftwidth=2 " number of spaces when shift indenting
+set tabstop=2 " number of visual spaces per tab
+set softtabstop=2 " number of spaces in tab when editing
+set expandtab " tab to spaces
+set relativenumber " show relative line numbers
+set number " show current line number
+set showmatch " highlight matching [{()}]
+set incsearch " search as characters are entered
+set hlsearch " highlight matches
+
+set ruler
+set showcmd
+set noshowmode
+set hidden
+
+" Linting
+let g:ale_fixers = {
+      \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \   'javascript': ['prettier'],
+      \   'javascriptreact': ['prettier'],
+      \   'typescript': ['prettier'],
+      \   'typescriptreact': ['prettier'],
+      \   'css': ['prettier'],
+      \   'scss': ['prettier'],
+      \   'ruby': ['standardrb'],
+      \}
+
+let g:ale_linters = {
+      \   'ruby': ['standardrb'],
+      \   'typescript': ['tsserver'],
+      \   'typescriptreact': ['tsserver'],
+      \}
+let g:ale_linters_explicit = 1
 let g:ale_fix_on_save = 1
+let g:ale_open_list = 0
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>

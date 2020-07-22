@@ -7,3 +7,6 @@
 [submodule "vim.symlink/pack/plugins/start/typescript-vim"]
 	path = vim.symlink/pack/plugins/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "vim.symlink/pack/plugins/start/vim-rspec"]
+	path = vim.symlink/pack/plugins/start/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
