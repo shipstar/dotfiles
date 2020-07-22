@@ -6,18 +6,6 @@ module.exports = {
     // font family with optional fallbacks
     fontFamily: '"Menlo for Powerline", "DejaVu Sans Mono", "Lucida Console", monospace',
 
-    // terminal cursor background color (hex)
-    cursorColor: '#F81CE5',
-
-    // color of the text
-    foregroundColor: '#fff',
-
-    // terminal background color
-    backgroundColor: '#000',
-
-    // border color (window, tabs)
-    borderColor: '#333',
-
     // custom css to embed in the main window
     css: '',
 
@@ -48,9 +36,6 @@ module.exports = {
       '#ffffff'
     ],
 
-    // See https://github.com/zeit/hyper/issues/312#issuecomment-281407215
-    shell: '/bin/zsh',
-
     updateChannel: 'stable'
   },
 
@@ -62,8 +47,6 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hypercwd',
-    'hyperterm-dibdabs',
-    'hyperterm-title',
     'hyper-dracula',
   ],
 
