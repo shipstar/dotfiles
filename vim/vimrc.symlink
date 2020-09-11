@@ -12,6 +12,7 @@ packadd! dracula
 let g:dracula_italic = 0 " TODO: Figure out why italics aren't working
 colorscheme dracula
 
+set autoindent
 set smartindent
 set shiftwidth=2 " number of spaces when shift indenting
 set tabstop=2 " number of visual spaces per tab
@@ -27,6 +28,9 @@ set ruler
 set showcmd
 set noshowmode
 set hidden
+
+" clear search highlighting by hitting return
+nnoremap <silent> <CR> :noh<CR><CR>
 
 " Linting
 let g:ale_fixers = {
@@ -49,8 +53,9 @@ let g:ale_linters_explicit = 1
 let g:ale_fix_on_save = 1
 let g:ale_open_list = 0
 
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+" Tests
+let test#strategy = "vimterminal"
+nnoremap <leader>f :TestFile<CR>
+nnoremap <leader>t :TestNearest<CR>
+nnoremap <leader>A :TestSuite<CR>
+nnoremap <leader>l :TestLast<CR>
