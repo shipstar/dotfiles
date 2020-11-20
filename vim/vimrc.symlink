@@ -1,3 +1,9 @@
+" Structure inspired by https://tuckerchapman.com/2020/05/09/vimrc_organization/
+
+source $HOME/.vim/init/plug.vimrc      " plugin loader
+source $HOME/.vim/init/general.vimrc   " general settings
+source $HOME/.vim/init/plugins.vimrc   " plugin specific settings
+
 " Map the leader key to space
 nnoremap <SPACE> <Nop>
 let mapleader = ' '
@@ -6,11 +12,6 @@ let mapleader = ' '
 set backspace=indent,eol,start
 
 syntax on
-
-" dracula theme
-packadd! dracula
-let g:dracula_italic = 0 " TODO: Figure out why italics aren't working
-colorscheme dracula
 
 set autoindent
 set smartindent
@@ -31,31 +32,3 @@ set hidden
 
 " clear search highlighting by hitting return
 nnoremap <silent> <CR> :noh<CR><CR>
-
-" Linting
-let g:ale_fixers = {
-      \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-      \   'javascript': ['prettier'],
-      \   'javascriptreact': ['prettier'],
-      \   'typescript': ['prettier'],
-      \   'typescriptreact': ['prettier'],
-      \   'css': ['prettier'],
-      \   'scss': ['prettier'],
-      \   'ruby': ['standardrb'],
-      \}
-
-let g:ale_linters = {
-      \   'ruby': ['standardrb'],
-      \   'typescript': ['tsserver'],
-      \   'typescriptreact': ['tsserver'],
-      \}
-let g:ale_linters_explicit = 1
-let g:ale_fix_on_save = 1
-let g:ale_open_list = 0
-
-" Tests
-let test#strategy = "vimterminal"
-nnoremap <leader>f :TestFile<CR>
-nnoremap <leader>t :TestNearest<CR>
-nnoremap <leader>A :TestSuite<CR>
-nnoremap <leader>l :TestLast<CR>

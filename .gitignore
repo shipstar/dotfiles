@@ -10,4 +10,8 @@ atom.symlink/themes
 
 git/gitconfig.local.symlink
 
+# ignore vim-plug artifacts
+vim.symlink/autoload
+vim.symlink/plugged
+
 .netrwhist
