@@ -29,3 +29,6 @@ nnoremap <leader>f :TestFile<CR>
 nnoremap <leader>t :TestNearest<CR>
 nnoremap <leader>A :TestSuite<CR>
 nnoremap <leader>l :TestLast<CR>
+
+" coc.nvim
+inoremap <silent><expr> <c-space> coc#refresh()
