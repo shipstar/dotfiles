@@ -49,3 +49,5 @@
   features = line-numbers
   whitespace-error-style = 22 reverse
   syntax-theme = Dracula
+[init]
+	defaultBranch = main
