@@ -38,6 +38,10 @@
 [diff "ansible-vault"]
 	textconv = ansible-vault view
 
+[diff "enc"]
+  textconv = rails encrypted:show
+  cachetextconv = false
+
 [interactive]
   diffFilter = delta --color-only
 
