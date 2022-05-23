@@ -14,7 +14,7 @@ path=(
 )
 
 # adjust the path for ASDF
-. $(brew --prefix asdf)/asdf.sh
+. $(brew --prefix asdf)/libexec/asdf.sh
 
 path=(
   # make sure ./bin is at the front so things like binstubs
