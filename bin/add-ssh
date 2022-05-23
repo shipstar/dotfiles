@@ -1,1 +1,1 @@
-/usr/bin/ssh-add -K ~/.ssh/id_rsa
+/usr/bin/ssh-add --apple-use-keychain ~/.ssh/id_rsa
