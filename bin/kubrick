@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# kubrick
+#
+# `kubrick` converts Quicktime .mov recordings into optimized .mp4s
+# for sharing in Slack, Jira, etc.
+
+usage () {
+  echo "Usage: kubrick [filename]";
+}
+
+file=$1
+ffmpeg -i $file -vcodec h264 -acodec mp2 "${file%.*}.mp4"
