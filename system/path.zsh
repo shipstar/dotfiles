@@ -10,6 +10,7 @@ path=(
   $ZSH/bin
   ./node_modules/.bin
   ~/.yarn/bin
+  $HOME/Library/Application\ Support/itch/apps/butler
   $path
 )
 
