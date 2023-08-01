@@ -1,11 +1,3 @@
-# Use `hub` as our git wrapper:
-#   http://defunkt.github.com/hub/
-hub_path=$(which hub)
-if (( $+commands[hub] ))
-then
-  alias git=$hub_path
-fi
-
 # The rest of my fun git aliases
 alias ga='git add'
 alias gaa='git add -A'
@@ -22,8 +14,6 @@ alias glgg='git log --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%
 alias glgs='git log --stat'
 alias gp='git push'
 alias gpf='git push --force-with-lease'
-alias gppm='git push prod master'
-alias gpu='git push -u'
 alias gpub='git push -u ${1-origin} `git symbolic-ref --short HEAD`'
 alias grbc="git rebase --continue"
 alias grhh='git reset --hard HEAD'
