@@ -6,6 +6,7 @@
 path=(
   /usr/local/bin
   /usr/local/sbin
+  /opt/homebrew/bin
   /usr/local/heroku/bin
   $ZSH/bin
   ./node_modules/.bin
