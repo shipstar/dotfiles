@@ -30,7 +30,7 @@
 	autocrlf = input
 	whitespace="cr-at-eol"
 	filemode = false
-  pager = delta
+	pager = delta
 	attributesfile = /Users/kshipley/.gitattributes
 
 [diff "ansible-vault"]
