@@ -23,9 +23,9 @@ brew "libyaml"
 brew "neovim"
 brew "openssh"
 brew "openssl@1.1"
-brew "postgresql", restart_service: true
+brew "postgresql"
 brew "readline"
-brew "redis", restart_service: true
+brew "redis"
 brew "rename"
 brew "screen"
 brew "sdl2"
