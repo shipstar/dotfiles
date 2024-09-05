@@ -50,3 +50,5 @@
 
 [init]
   defaultBranch = main
+[commit]
+	template = /Users/kshipley/.gitmessage
