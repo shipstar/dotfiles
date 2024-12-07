@@ -5,5 +5,5 @@ alias vim="nvim"
 alias wds='webpack-dev-server'
 
 # directory aliases
-alias gobl="cd ~/Programming/brightline"
-alias goreef='cd ~/Programming/brightline/reef'
+alias gobl="cd ~/Code/brightline"
+alias goreef='cd ~/Code/brightline/reef'
