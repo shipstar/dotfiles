@@ -10,7 +10,3 @@ then
   alias lla='gls -Al --color'
 fi
 
-if command -v COMMAND &> /dev/null
-then
-  alias dc='docker-compose' # overrides 'desk-calculator' on MacOS lulz
-fi
