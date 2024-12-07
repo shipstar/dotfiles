@@ -7,13 +7,13 @@
 3. `brew install git`
 4. `git clone git@github.com:shipstar/dotfiles.git ~/.dotfiles`
   - May require generating a new SSH key and adding to GitHub if you forgot to back it up
-5. `./script/bootstrap`
+5. `./bootstrap.sh`
 6. Restart the computer for things like scroll direction to take effect
 
 I always have a few unpredictable issues to resolve after this as libraries
 are out of date, URLs have changed, etc, but this is a good starting point.
 
-## script/bootstrap
+## ./bootstrap.sh
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
 Everything is configured and tweaked within `~/.dotfiles`.
@@ -32,7 +32,7 @@ Everything's built around topic areas. If you're adding a new area to your
 forked dotfiles — say, "Java" — you can simply add a `java` directory and put
 files in there. Anything with an extension of `.zsh` will get automatically
 included into your shell. Anything with an extension of `.symlink` will get
-symlinked without extension into `$HOME` when you run `script/bootstrap`.
+symlinked without extension into `$HOME` when you run `./bootstrap.sh`.
 
 ## what's inside
 
@@ -57,7 +57,7 @@ There's a few special files in the hierarchy.
   your `$HOME`. This is so you can keep all of those versioned in your dotfiles
   but still keep those autoloaded files in your home directory.
 
-  To further nest symlinks into subdirectories under `$HOME`, use `+` signs to signify additional directory delimiters. So for example, the file `topic/config+topic.symlink` would get symlinked to `$HOME/.config/topic` when you run `script/bootstrap`.
+  To further nest symlinks into subdirectories under `$HOME`, use `+` signs to signify additional directory delimiters. So for example, the file `topic/config+topic.symlink` would get symlinked to `$HOME/.config/topic` when you run `./bootstrap.sh`.
 
 ## thanks
 
