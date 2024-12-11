@@ -40,7 +40,6 @@ brew "zsh"
 
 cask "alfred"
 cask "aptible" if ENV["BLH"]
-cask "authy"
 cask "brave-browser"
 cask "caffeine"
 cask "chromedriver"
