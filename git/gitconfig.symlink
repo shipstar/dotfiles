@@ -32,6 +32,7 @@
 	filemode = false
 	pager = delta
 	attributesfile = /Users/kshipley/.gitattributes
+	editor = code --wait
 
 [diff "ansible-vault"]
 	textconv = ansible-vault view
