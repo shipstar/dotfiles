@@ -1,3 +1,0 @@
-hl () {
-  pbpaste | highlight --syntax=$1 -O rtf -K 44 $2 | pbcopy
-}
