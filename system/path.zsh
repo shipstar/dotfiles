@@ -4,6 +4,7 @@
 # for more info.
 
 path=(
+  ${ASDF_DATA_DIR:-$HOME/.asdf}/shims
   /usr/local/bin
   /usr/local/sbin
   /opt/homebrew/bin
@@ -13,9 +14,6 @@ path=(
   $HOME/Library/Application\ Support/itch/apps/butler
   $path
 )
-
-# adjust the path for ASDF
-. $(brew --prefix asdf)/libexec/asdf.sh
 
 path=(
   # make sure ./bin is at the front so things like binstubs
