@@ -13,8 +13,7 @@ $git_commit\
 $git_state\
 $git_status\
 $custom\
-$character\
-$memory_usage
+$character
 """
 
 # Replace the "❯" symbol in the prompt with "➜"
