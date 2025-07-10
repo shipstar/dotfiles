@@ -18,6 +18,7 @@ alias gp='git push'
 alias gpf='git push --force-with-lease'
 alias gpub='git push -u ${1-origin} `git symbolic-ref --short HEAD`'
 alias grbc="git rebase --continue"
+alias grdy="current=\$(git branch --show-current); git fetch --all --prune; git for-each-ref --format='%(refname:short) %(upstream:short)' refs/heads | awk '\$2 {print \$1}' | while read branch; do git checkout \$branch && git merge --ff-only @{upstream} || true; done; git checkout \$current; gclf"
 alias grhh='git reset --hard HEAD'
 alias grpo='git remote prune origin'
 alias gs='git status'
